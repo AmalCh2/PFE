@@ -1,0 +1,87 @@
+@import 'font-awesome/css/font-awesome.css';
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+
+section {
+background-image: url("../../../../../assets/images/Background-2.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+background-color: hsla(0, 0%, 0%, 0.6);
+background-blend-mode: overlay;
+display: grid;
+place-items: center;
+height: 90.9vh;
+min-height: 600px;
+text-align: center;
+padding-top: 125px;
+}
+
+
+.profile-box {
+    position: relative;
+    width: 400px;
+    height: 450px;
+    background: transparent;
+    border: none;
+    border-radius: 20px;
+    backdrop-filter: blur(15px) brightness(80%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 480px) {
+    .profile-box {
+        width: 100%;
+        border-radius: 0px;
+    }
+}
+
+.col-23 {
+    width: 80%;
+}
+.col2 {
+    width: 100%;
+    text-align: center;
+}
+
+
+.iconblock {
+    position: relative; /* Position relative des éléments enfants */
+}
+
+/* Styles de h4 */
+.iconblock h4 {
+    font-weight: bold; /* Police en gras*/
+    padding-top: 0%; /* Aucun espacement en haut*/
+}
+
+.iconblockdescription {
+    text-align: center;
+}
+
+.iconblockdescription h4 {
+    color: aliceblue;
+}
+
+/* Styles pour l'icône en haut*/
+.icontop {
+    display: block;/* Affiche l'élément comme un bloc */
+    padding-top: 5%;
+}
+
+/* Styles d'icône*/
+.icontop .icon {
+    position: relative;/* Position relative*/
+    display: block; /* Affiche l'icône comme un bloc */
+}
+
+/* Styles de la description du bloc d'icônes en haut */
+.icontop .iconblockdescription {
+    padding-top: 25px;
+}

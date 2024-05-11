@@ -1,0 +1,25 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<section id="choix_profil">
+    <div class="profile-box">
+
+
+        <div class="col-23">
+            @for (IconBlock of section.IconBlocks; track IconBlock) {
+    
+                <!--Icon Block-->
+                <div class="col2 iconblock icontop wow fadeInUp" data-wow-delay="0.1s">
+                    <!--Icon-->
+                    <div class="icon">
+                        <a class="fa {{IconBlock.IconShape}} fa-2x" style="color: #fff;" href="{{section.IconLink}}"></a>
+                    </div>
+                    <!--Icon Block Description-->
+                    <div class="iconblockdescription">
+                        <h4>{{IconBlock.IconTitle}}</h4>
+                    </div>
+                </div>
+                <!--End of Icon Block-->
+            }
+        </div>
+    </div>
+</section>

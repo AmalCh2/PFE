@@ -1,0 +1,105 @@
+<div class="all-page flex items-center">
+  <app-side-nav (onToggleSideNav)="onToggleSideNav($event)"></app-side-nav>
+
+  <div class="body" [ngClass]="getBodyClass()">
+      <router-outlet></router-outlet>
+  
+  
+  
+      <section class="content">
+        <div class="left-content">
+        <div class="mediatheque">
+            <h1><i class="fa fa-image faa2x"></i> Médiathèque</h1>
+            <div class="mediatheque-container">
+            <div class="image-container img-one">
+                <img src="../../assets/images/image port 1.png"/>
+                <div class="overlay">
+                </div>
+            </div>
+  
+            <div class="image-container img-two">
+                <img src="../../assets/images/image port 5.png"/>
+                <div class="overlay">
+                </div>
+            </div>
+  
+            <div class="image-container img-three">
+                <img src="../../assets/images/map.png"/>
+                <div class="overlay">
+                </div>
+            </div>
+  
+            <div class="image-container img-four">
+                <img src="../../assets/images/image port 2.png"/>
+                <div class="overlay">
+                </div>
+            </div>
+  
+            <div class="image-container img-five">
+                <img src="../../assets/images/image port 3.png"/>
+                <div class="overlay">
+                </div>
+            </div>
+  
+            <div class="image-container img-six">
+                <img src="../../assets/images/image port 4.png"/>
+                <div class="overlay">
+                </div>
+            </div>
+            </div>
+        </div>
+  
+          <div class="botomr-section">
+            <div class="calendrier_">
+  
+              <h1><i class="fa fa-calendar faa2x"></i> Calendrier</h1>
+  
+              <div class="calendrier__container">
+                
+                  <app-calendrier></app-calendrier>
+
+                
+              </div>
+            </div>
+        
+            <div class="message">
+                <h1><i class="fa fa-envelope faa2x"></i> Ecrire un message</h1>
+              <div class="message-container">
+                <div class="msg-item box-one">
+                  ynajem yakhtar lchkoun ynajem yab3eth parmi l users...
+                </div>
+              </div>
+            </div>
+      </div>
+    </div>
+  
+  
+  
+    <div class="right-content">
+      <div class="calcul-info">
+        <div class="icon-container">
+          <h1><i class="fa fa-calculator faa2x"></i> Calculatrice</h1> 
+        </div>
+        
+      </div>
+  
+      <div class="active-calcul">
+        
+  
+  <p>asgher taille fl ecran : nsagher f toul zone gris li wra lcalcul </p>
+  
+  
+  
+  
+  
+      </div>
+  
+    </div>
+    </section>
+  
+  </div>
+
+</div>
+
+
+
